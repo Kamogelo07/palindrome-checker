@@ -1,6 +1,6 @@
 # Palindrome Checker
 
-This project is a small application that checkes whether a word/number entered by a user is a palindrome or no.
+This project is a small application that checks whether a word/number entered by a user is a palindrome or no.
 
 ## What is a Palindrome?
 
