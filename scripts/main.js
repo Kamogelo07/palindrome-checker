@@ -10,12 +10,20 @@ function isPalindrome(){
     //let reversePhraseToCheck = phraseReverser(wordToCheck.value);
     //let reversePhrase = wordToCheck.value.split(" ");
 
-    if(reverseWordNumberToCheck !== "" && reverseWordNumberToCheck !== " "){
+    if(reverseWordNumberToCheck !== "" && !reverseWordNumberToCheck.match(/^\s*$/)){
         wordToCheck.value == reverseWordNumberToCheck ? outputText.innerText = wordToCheck.value +" " + "is a palindrome" : 
         outputText.innerText = wordToCheck.value +" " + "is not a palindrome";    
     }
     else{
         alert("Please enter a word/number to check whether it is a palindrome or not");
+        wordToCheck.value=""; //clear whitespace before focus
+        wordToCheck.focus();
     }
     
+}
+
+function clearEverything(){
+    wordToCheck.value="";
+    outputText.innerText="";
+
 }
